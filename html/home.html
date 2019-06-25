@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>中天科尔-首页</title>
+  <!-- fullpage 是一个基于 jQuery 的全屏插件 -->
+  
+  <link href="https://cdn.bootcss.com/fullPage.js/2.9.7/jquery.fullpage.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/web.css">
+  <script src="https://cdn.bootcss.com/jquery/1.10.0/jquery.js"></script>
+  <script src="https://cdn.bootcss.com/fullPage.js/2.9.7/jquery.fullpage.js"></script>
+
+</head>
+<body>
+  <header id="header_Wrap">
+    <div class="header_top">
+      <div class="inner ju_Between" style="line-height: 30px;">
+        <div class="fl_Tel">客服热线：400-961-8886</div>
+        <div class="fr_Login">登录注册</div>
+      </div>
+    </div>
+    <div class="header_Bottom">
+      <div class="inner ju_Between">
+        <div class="logo"></div>
+        <nav>
+          <a class="cur" href="javascript:void(0);">首页</a>
+          <a href="javascript:void(0);">发布车源</a>
+          <a href="javascript:void(0);">查找货源</a>
+          <a href="javascript:void(0);">我的运单</a>
+          <a href="javascript:void(0);">个人账户</a>
+          <a href="javascript:void(0);">个人中心</a>
+          <div class="nav_line"></div>
+        </nav>
+      </div>
+    </div>
+  </header>
+<div id="fullpage">
+	<div class="section">
+	  <div class="slide" style="background-size: cover;background-image: url(../img/benner.png)"></div>
+    <div class="slide"><h1>第二瓶</h1></div>
+    <div class="slide"><h1>第三瓶</h1></div>
+	</div>
+	<div class="section">
+    <div class="inner ju_Center" style="flex-direction: column;">
+      <h1 class="Process_Title">平台交易流程</h1>
+      <img style="padding: 30px;" src="../img/TransactionProcess.png" alt="">
+    </div>
+  </div>
+	<div class="section" style="background-size: cover;background-image: url(../img/CarrierBg.png)">
+    <div class="inner ju_Around">
+      <div class="fl_iPhone">
+        <img src="../img/CarrieriPhone.png" alt="">
+      </div>
+      <div class="fr_Code">
+        <h1>汽运承运商APP</h1>
+        <div class="fr_Code_fun">
+          <span>免费发布车源信息</span>
+          <span>车辆在途跟踪</span>
+          <span>查找海量货源</span>
+          <span>形成电子合同</span>
+        </div>
+        <div class="ju_Center">
+          <img src="../img/CarrierCode.png" alt="">
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="inner">
+        <div class="ju_Around">
+          <dl>
+            <dt>帮助中心</dt>
+            <dd>新手上路</dd>
+            <dd>疑难解答</dd>
+          </dl>
+          <dl>
+            <dt>关于我们</dt>
+            <dd>公司简介</dd>
+            <dd>联系我们</dd>
+          </dl>
+          <dl>
+            <dt>关注我们</dt>
+            <dd>微信订阅号：ztke2017</dd>
+          </dl>
+          <dl>
+            <dt>客服热线</dt>
+            <dd style="font-size: 32px;">400-961-8886</dd>
+          </dl>
+        </div>
+        <div class="copy">
+          <h5>© Copyright 2016-2018 徐州中天科尔物流有限公司. All rights reserved</h5>
+          <h6>苏ICP备17028103号 苏B2-20170524</h6>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#fullpage').fullpage({
+        sectionsColor: ['#f2f2f2', 'white', '#678'],
+        controlArrows: false,// 默认值：true，决定是否使用控制箭头向左或向右移动幻灯片。
+        scrollingSpeed: 700,// 默认值：700，每个屏幕滚动动画执行的时间，时间的单位为毫秒（ms）。
+        loopHorizontal: true,//横向slide幻灯片是否循环滚动，默认为true
+        // scrollBar: true,//是否包含滚动条，默认为false,若为true浏览器自带滚动条出现
+        fixedElements: '#header_Wrap',//固定元素，默认为null,需要配置一个jquery选择器，在页面滚动时，fixElements设置的元素不滚动
+        slidesNavigation: true,//是否显示横向幻灯片的导航，默认为false
+        slidesNavPosition: 'bottom',//横向导航的位置，默认为bottom，可以设置为top或bottom
+      });
+    });
+  </script>
+</body>
+<!-- 公共导航栏  -->
+<script type="text/javascript">
+  var $navLi = $('#header_Wrap nav a');
+  var $navLiCur = $('#header_Wrap nav a.cur');
+  var $navUl = $('#header_Wrap nav');
+  var $navLine = $('#header_Wrap .nav_line');
+  // 初始化位置
+  $navLine.animate({
+    width: $navLiCur.outerWidth(),
+    left: $navLiCur.position().left,
+  })
+  // 鼠标移入位置
+  $navLi.on('mouseenter', function () {
+    PoLeft = $(this).position().left; //  "li"距父元素"ul"的偏移位置
+    WidthLine = $(this).outerWidth(); //  width + padding + border
+
+    $navLine.stop().animate({
+      width: WidthLine,
+      left: PoLeft + 0
+    });
+  })
+  // 鼠标移出位置
+  $navUl.on('mouseleave', function () {
+    $navLine.stop().animate({
+      width: $navLiCur.outerWidth(),
+      left: $navLiCur.position().left,
+    });
+  })
+</script>
+</html>

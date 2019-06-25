@@ -1,0 +1,219 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 
+  上面是清除各浏览器，样式差异化
+*/
+
+a,
+a:focus,
+a:hover {
+  text-decoration: none;
+}
+
+a {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: #eff2f4;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue,
+  Helvetica,
+  PingFang SC,
+  Hiragino Sans GB,
+  Microsoft YaHei,
+  Arial,
+  sans-serif;
+}
+
+div,
+ul,
+li {
+  background: rgba(0, 0, 0, 0.1);
+}
+/* 
+  flex布局 
+*/
+.ju_Center {
+  display: flex;
+  justify-content: center;
+}
+.ju_Between {
+  display: flex;
+  justify-content: space-between;
+}
+.ju_Around {
+  display: flex;
+  justify-content: space-around;
+}
+.ju_Start {
+  display: flex;
+  justify-content: flex-start;
+}
+.ju_End {
+  display: flex;
+  justify-content: flex-end;
+}
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+/* 
+  以上都是公共样式 END
+  web.css 正式样式 START
+*/
+#header_Wrap {
+  width: 100%;
+  height: 110px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+#header_Wrap .header_top {
+  width: 100%;
+  height: 30px;
+  background:rgba(242, 247, 251, 1);
+}
+#header_Wrap .header_Bottom {
+    width: 100%;
+    height: 80px;
+    background:rgba(0, 153, 255, 0.8);
+}
+#header_Wrap nav {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#header_Wrap nav a {
+  font-size: 16px;
+  color: #fff;
+  padding: 0 32px;
+  height: 80px;
+  line-height: 80px;
+  z-index: 1;
+}
+.nav_line {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 96px;
+  height: 80px;
+  background-color: #F29021;
+}
+#header_Wrap .logo {
+  width: 240px;
+  background: url(../img/logo.png)
+}
+h1.Process_Title {
+  font-size: 48px;
+  font-weight: 600;
+  margin: 0 auto;
+  padding: 70px 0 10px;
+  color: #2c2c2c;
+}
+.fr_Code,
+.fl_iPhone {
+  padding-bottom: 100px;
+}
+.fr_Code h1 {
+  font-size:48px;
+  font-weight: 600;
+  color: #2c2c2c;
+  padding-bottom: 60px;
+  text-align: center;
+}
+.fr_Code_fun {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+}
+.fr_Code_fun span {
+  width: 50%;
+  display: inline-block;
+  float: left;
+  text-align: center;
+  font-size: 24px;
+  padding: 16px 0;
+  color: #2c2c2c;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 240px;
+  color: #fff;
+  padding-top: 30px;
+  box-sizing: border-box;
+  background: #252829;
+}
+footer dt {
+  font-size: 18px;
+  margin-bottom: 44px;
+}
+
+footer dd {
+  font-size: 14px;
+  margin-bottom: 22px;
+}
+
+footer .copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.8;
+  margin-top: 8px;
+}
+
+
