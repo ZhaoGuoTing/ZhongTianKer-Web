@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>发布车源</title>
+    <!-- web 是网站的整体样式 -->
+    <link rel="stylesheet" href="../css/web.css">
+    <!-- iconfont 是一个阿里巴巴的字体图标 -->
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <script src="https://cdn.bootcss.com/jquery/1.10.0/jquery.js"></script>
+</head>
+
+<body>
+    <header style="height: 110px;background:rgba(0,153,255,1)"></header>
+    <div class="cont_Wrap">
+        <div class="card inner">
+            <h2 class="card_Title">查询车辆</h2>
+            <div class="row" style="justify-content: space-between;align-items: baseline;">
+                <form action="" class="form_group">
+                    <div class="row">
+                        <div class="form_Item">
+                            <label for="">启运地：</label>
+                            <select class="" name="">
+                                <option value="">选择省</option>
+                                <option value="">河北省</option>
+                                <option value="">河南省</option>
+                            </select>
+                            <select class="" name="">
+                                <option value="">选择市</option>
+                                <option value="">北京市</option>
+                                <option value="">上海市</option>
+                            </select>
+                        </div>
+                        <div class="form_Item">
+                            <label for="">启运地：</label>
+                            <select class="" name="">
+                                <option value="">选择省</option>
+                                <option value="">河北省</option>
+                                <option value="">河南省</option>
+                            </select>
+                            <select class="" name="">
+                                <option value="">选择市</option>
+                                <option value="">北京市</option>
+                                <option value="">上海市</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form_Item visible">
+                            <label for="">车型：</label>
+                            <select class="" name="" style="width: 330px;">
+                                <option value="">选择车型</option>
+                                <option value="">河北车型</option>
+                                <option value="">河南车型</option>
+                            </select>
+                        </div>
+                        <div class="form_Item visible">
+                            <label for="">车长：</label>
+                            <select class="" name="" style="width: 330px;">
+                                <option value="">选择车长</option>
+                                <option value="">河北车长</option>
+                                <option value="">河南车长</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form_Item visible">
+                            <label for="">货物名称：</label>
+                            <input type="text" placeholder="输入货物名称">
+                        </div>
+                    </div>
+                </form>
+                <a class="btn_style" href="#">查询</a>
+            </div>
+            <div class="sildeToggle_Btn"><span>收起</span><i class="iconfont" style="color: #707070;">&#xe600;</i></div>
+        </div>
+        <div class="card inner" style="margin-top: 90px;">
+            <div class="card_Title ju_Between al_Center">
+                <div class="ju_Start al_Center">
+                    <div class="start"></div>
+                    <div>山西省晋中市</div>
+                    <i class="iconfont al_Center" style="color: #f04d46;padding: 0 30px 0 50px;">&#xe603;</i>
+                    <div class="end"></div>
+                    <div>江苏省徐州市</div>
+                </div>
+                <div class="ju_Start">
+                    发布日期：2019-06-24 12:00:00
+                    <a href="#" class="iconfont" style="color: #707070;padding: 0 30px 0 70px;">&#xe602;</a>
+                </div>
+            </div>
+            <div class="row" style="justify-content: space-between;align-items: flex-end;">
+                <div class="Invoice">
+                    <div class="Invoice_Item"><span>货单号：</span>123456789123456789</div>
+                    <div class="Invoice_Item"><span>货物总量：</span>100吨</div>
+                    <div class="Invoice_Item"><span>货物名称：</span>精煤</div>
+                    <div class="Invoice_Item"><span>货物余量：</span>30吨</div>
+                    <div class="Invoice_Item"><span>矿点：</span>XXX矿点</div>
+                    <div class="Invoice_Item" style="color: #F29021;"><span>运价：</span>¥158.00元【不含税】</div>
+                </div>
+                <a class="btn_style" href="#">我要运货</a>
+            </div>
+        </div>
+    </div>
+    <!-- <footer style="height: 240px;"></footer> -->
+</body>
+<script>
+    // <!-- 牵引车、13米、最大载重量:30吨 -->
+    $('.sildeToggle_Btn').on('click', function(){
+        if($('.visible').is(':visible')) {
+            $(this).find('span').text('展开');
+            $(this).find('i').html('&#xe601;');
+            $('.visible').slideUp(200);
+        }else{
+            $(this).find('span').text('收起');
+            $(this).find('i').html('&#xe600;');
+            $('.visible').slideDown(200);
+        }
+    })
+</script>
+</html>

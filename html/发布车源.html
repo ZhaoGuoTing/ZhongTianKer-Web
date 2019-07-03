@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>发布车源</title>
+  <!-- web 是网站的整体样式 -->
+  <link rel="stylesheet" href="../css/web.css">
+  <!-- iconfont 是一个阿里巴巴的字体图标 -->
+  <link rel="stylesheet" href="../iconfont/iconfont.css">
+  <script src="https://cdn.bootcss.com/jquery/1.10.0/jquery.js"></script>
+</head>
+<body>
+  <header style="height: 110px;background:rgba(0,153,255,1)"></header>
+  <div class="cont_Wrap">
+    <div class="card inner">
+      <h2 class="card_Title">选择车辆</h2>
+      <div class="row" style="justify-content: space-between;">
+         <form action="" class="form_group">
+           <div class="form_Item al_Center" style="position: relative;">
+             <div class="form_Item_box"><span>牵引车</span><span>13米</span><span>最大载重量:30吨</span></div>
+             <div class="form_menu">
+               <ul>
+                 <li><span>牵引车</span><span>13米</span><span>最大载重量:30吨</span></li>
+                 <li>345680</li>
+                 <li>345680</li>
+                 <li>345680</li>
+                 <li>345680</li>
+               </ul>
+             </div>
+           </div>
+         </form>
+         <a class="btn_style" href="#">添加车辆</a>
+      </div>
+    </div>
+    <div class="card inner">
+      <h2 class="card_Title">发布信息</h2>
+      <form action="" class="form_group">
+        <div class="form_Item">
+          <label for="">发车时间：</label>
+          <input type="date" placeholder="请选择">
+          <span style="padding: 0 30px;">至</span>
+          <input type="date" placeholder="请选择">
+        </div>
+        <div class="form_Item">
+          <label for="">启运地：</label>
+          <select class="" name="">
+            <option value="">选择省</option>
+            <option value="">河北省</option>
+            <option value="">河南省</option>
+          </select>
+          <select class="" name="">
+            <option value="">选择市</option>
+            <option value="">北京市</option>
+            <option value="">上海市</option>
+          </select>
+          <select class="" name="">
+            <option value="">选择区、县</option>
+            <option value="">朝阳区</option>
+            <option value="">海淀区</option>
+          </select>
+        </div>
+        <div class="form_Item">
+          <label for="">目的地范围：</label>
+          <input type="text" placeholder="输入目的地" style="width: 500px;">
+        </div>
+        <div class="form_Item">
+          <label for="">可用运载重量：</label>
+          <input type="text" placeholder="输入可用运载重量" style="width: 280px;border-bottom-right-radius: 0;border-top-right-radius: 0;">
+              <div id="dun">吨</div>
+          </input>
+        </div>
+        <div class="form_Item">
+          <label for="">联系人：</label>
+          <input type="text" placeholder="联系人姓名">
+        </div>
+        <div class="form_Item">
+          <label for="">联系人电话：</label>
+          <input type="text" placeholder="联系人电话">
+        </div>
+      </form>
+    </div>
+    <div class="btn_group inner">
+      <div class="btn_style"><span class="pv20">发布</span></div>
+      <div class="btn_style_white"><span class="pv20">取消</span></div>
+    </div>
+  </div>
+  <!-- <footer style="height: 240px;"></footer> -->
+</body>
+<script>
+    // <!-- 牵引车、13米、最大载重量:30吨 -->
+    $('.form_Item_box').on('click', function(e){
+      $('.form_menu').slideToggle(200);
+      e.stopPropagation();
+      $(document).on("click", function(){
+         $('.form_menu').slideUp(200);
+      });
+    })
+</script>
+</html>

@@ -6,9 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>中天科尔-首页</title>
   <!-- fullpage 是一个基于 jQuery 的全屏插件 -->
-  
   <link href="https://cdn.bootcss.com/fullPage.js/2.9.7/jquery.fullpage.css" rel="stylesheet">
+  <!-- web 是网站的整体样式 -->
   <link rel="stylesheet" href="../css/web.css">
+<!-- iconfont 是一个阿里巴巴的字体图标 -->
+  <link rel="stylesheet" href="../iconfont/iconfont.css">
   <script src="https://cdn.bootcss.com/jquery/1.10.0/jquery.js"></script>
   <script src="https://cdn.bootcss.com/fullPage.js/2.9.7/jquery.fullpage.js"></script>
 
@@ -17,8 +19,11 @@
   <header id="header_Wrap">
     <div class="header_top">
       <div class="inner ju_Between" style="line-height: 30px;">
-        <div class="fl_Tel">客服热线：400-961-8886</div>
-        <div class="fr_Login">登录注册</div>
+        <div class="fl_Tel"><span class="iconfont" style="margin-right: 10px;">&#xe608;</span>客服热线：400-961-8886</div>
+        <div class="fr_Login"><span class="iconfont">&#xe60a;</span>
+            <a href="#" style="padding: 0 16px;">登录</a>
+            <a href="#">注册</a>
+        </div>
       </div>
     </div>
     <div class="header_Bottom">
@@ -38,18 +43,18 @@
   </header>
 <div id="fullpage">
 	<div class="section">
-	  <div class="slide" style="background-size: cover;background-image: url(../img/benner.png)"></div>
-    <div class="slide"><h1>第二瓶</h1></div>
+	  <div class="slide" style="background-size: cover;background-image: url(../img/banner1.jpg)"></div>
+    <div class="slide" style="background-size: cover;background-image: url(../img/banner2.jpg)"></div>
     <div class="slide"><h1>第三瓶</h1></div>
 	</div>
 	<div class="section">
-    <div class="inner ju_Center" style="flex-direction: column;">
+    <div class="inner ju_Center Flex_Dir">
       <h1 class="Process_Title">平台交易流程</h1>
-      <img style="padding: 30px;" src="../img/TransactionProcess.png" alt="">
+      <img style="padding: 30px;width: 800px;" src="../img/TransactionProcess.png" alt="">
     </div>
   </div>
 	<div class="section" style="background-size: cover;background-image: url(../img/CarrierBg.png)">
-    <div class="inner ju_Around">
+    <div class="inner ju_Around ">
       <div class="fl_iPhone">
         <img src="../img/CarrieriPhone.png" alt="">
       </div>
@@ -111,7 +116,7 @@
     });
   </script>
 </body>
-<!-- 公共导航栏  -->
+<!-- 公共导航栏、鼠标划入的效果  -->
 <script type="text/javascript">
   var $navLi = $('#header_Wrap nav a');
   var $navLiCur = $('#header_Wrap nav a.cur');

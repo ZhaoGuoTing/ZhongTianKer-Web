@@ -65,7 +65,7 @@ img {
 }
 
 body {
-  background-color: #eff2f4;
+  background-color: white;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   font-family: Helvetica Neue,
@@ -81,6 +81,12 @@ div,
 ul,
 li {
   background: rgba(0, 0, 0, 0.1);
+}
+.pv20 {
+  padding: 0 20px;
+}
+.mt30 {
+  margin-top: 30px;
 }
 /* 
   flex布局 
@@ -105,6 +111,15 @@ li {
   display: flex;
   justify-content: flex-end;
 }
+.al_Center {
+  display: flex;
+  align-items: center;
+}
+
+.Flex_Dir {
+  flex-direction: column;
+  align-items: center;
+}
 .inner {
   width: 1200px;
   margin: 0 auto;
@@ -125,6 +140,13 @@ li {
   width: 100%;
   height: 30px;
   background:rgba(242, 247, 251, 1);
+  color: #666;
+}
+#header_Wrap .header_top .fr_Login {
+  display: flex;
+}
+#header_Wrap .header_top .fr_Login a {
+  color: #666;
 }
 #header_Wrap .header_Bottom {
     width: 100%;
@@ -180,14 +202,266 @@ h1.Process_Title {
   padding-bottom: 50px;
 }
 .fr_Code_fun span {
+  float: left;
   width: 50%;
   display: inline-block;
-  float: left;
   text-align: center;
   font-size: 24px;
   padding: 16px 0;
   color: #2c2c2c;
 }
+.row {
+  display: flex;
+  align-items: center;
+}
+.form_Item {
+  display: flex;
+  align-items: center;
+  height: 75px;
+  line-height: 75px;
+}
+.form_Item label {
+  display: inline-block;
+  width: 160px;
+  text-align: right;
+}
+.form_Item label::before {
+  display: inline-block;
+  content: '*';
+  color: #ff3333;
+  margin-right: 4px;
+}
+.form_Item_box,
+.form_Item select,
+.form_Item input {
+  padding: 0 10px;
+  height: 50px;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  background-color: white;
+  width: 330px;
+  box-sizing: border-box;
+  color: #707070;
+  font-size: 14px;
+  margin-right: 10px;
+}
+.form_Item input[type=date] {
+  width: 210px;
+  padding: 0;
+}
+.form_Item select {
+  width: 160px;
+  margin-right: 10px;
+}
+.form_Item #dun {
+  width: 50px;
+  height: 50px;
+  line-height: 48px;
+  text-align: center;
+  background: white;
+  border: 1px solid #bbb;
+  border-left: none;
+  box-sizing: border-box;
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+  background: #0099ff;
+  color: white;
+}
+.form_Item_box {
+  width: 1000px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 60px 0 20px;
+  position: relative;
+}
+.form_Item_box::after {
+  display: block;
+  content: '';
+  border: 8px solid;
+  border-color: #5a5a5a transparent transparent transparent;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  border-radius: 4px;
+}
+.form_menu span,
+.form_Item_box span {
+  width: 160px;
+  line-height: 48px;
+}
+.form_menu {
+  display: none;
+  padding: 10px 20px 10px 20px;
+  background: white;
+  border-radius: 4px;
+  position: absolute;
+  top: 75px;
+  width: 1000px;
+  box-sizing: border-box;
+}
+.form_menu ul {
+  max-height: 200px;
+  overflow-y: scroll;
+  padding-right: 40px;
+}
+.form_menu li {
+  height: 50px;
+  line-height: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  color: #515151;
+}
+.form_menu li:hover {
+  background: rgba(0, 153, 255, 0.1);
+}
+.card {
+  padding: 10px;
+  margin-top: 30px;
+  box-sizing: border-box;
+  border: 1px solid #c6c6c6;
+}
+.card_Title {
+  font-size: 18px;
+  padding: 24px 0;
+  color: #2c2c2c;
+  border-bottom: 1px solid #C6C6C6;
+}
+h2.card_Title {
+  font-size: 24px;
+  font-weight: 600;
+}
+.btn_group {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.btn_style {
+  display: inline-block;
+  padding: 16px 48px;
+  border-radius: 4px;
+  background:rgba(0, 153, 255, 1);
+  color: white;
+  transition:All 0.4s ease-in-out;
+  cursor: pointer;
+  margin: 0 10px;
+}
+.btn_style:hover {
+  background:rgba(0, 127, 255, 1);
+}
+.btn_style_white {
+  margin: 0 10px;
+  display: inline-block;
+  padding: 16px 48px;
+  border-radius: 4px;
+  background: white;
+  color: rgba(0, 153, 255, 1);
+  border: 1px solid #0099ff;
+  transition: All 0.4s ease-in-out;
+  cursor: pointer;
+}
+.btn_style_orange {
+  margin: 0 10px;
+  display: inline-block;
+  padding: 16px 48px;
+  border-radius: 4px;
+  background:#F29021;
+  color: white;
+  border: 1px solid #F29021;
+  transition: All 0.4s ease-in-out;
+  cursor: pointer;
+}
+.sildeToggle_Btn {
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: white;
+  position: absolute;
+  left: calc(50% - 60px);
+  border: 1px solid #c6c6c6;
+  border-top: none;
+  margin-top: 9px;
+  cursor: pointer;
+}
+.sildeToggle_Btn span {
+  padding-right: 8px;
+}
+.start {
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+  margin: 0 20px;
+  text-align: center;
+  border: 1px solid #6db827;
+  border-radius: 50%;
+}
+.start::after {
+  display: block;
+  content: '起';
+  color: #6db827;
+  font-size: 12px;
+}
+.end {
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+  margin: 0 20px;
+  text-align: center;
+  border: 1px solid #f04d46;
+  border-radius: 50%;
+}
+.end::after {
+  display: block;
+  content: '终';
+  color: #f04d46;
+  font-size: 12px;
+}
+.Invoice {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1000px;
+  color: #515151;
+  padding-top: 10px;
+}
+.Invoice_Item {
+  width: 290px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+}
+.Invoice_Item span {
+  color: #2c2c2c;
+  font-weight: 600;
+}
+.tab_Title {
+  color: #2c2c2c;
+  font-size:18px;
+  border-bottom: 1px solid #CCCCCC;
+  position: relative;
+}
+.tab_Title li {
+  width: calc(100% / 6);
+  text-align: center;
+  padding: 30px 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+.tab_Title li.cur {
+  color: #F29021;
+}
+
+.tab_line {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #F29021;
+}
+
 footer {
   position: absolute;
   bottom: 0;
@@ -217,3 +491,41 @@ footer .copy {
 }
 
 
+/* 
+  Bootstrap
+*/
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+select:focus,
+input:focus {
+  outline: none;
+  /* 清除点击时默认的蓝色焦点框 */
+  border-style: solid;
+  border-color: rgba(0, 153, 255, 1);
+  box-shadow: 0 0 4px #0099ff;
+}
+input::-webkit-input-placeholder {
+  /* placeholder颜色  */
+  color: #707070;
+  /* placeholder字体大小  */
+  font-size: 14px;
+  /* placeholder位置  */
+}
