@@ -461,7 +461,22 @@ h2.card_Title {
   height: 2px;
   background-color: #F29021;
 }
-
+.siderBar_left {
+  width: 180px;
+}
+.content_right {
+  width: 1000px
+}
+.user_padding {
+  padding: 40px;
+}
+.user_Pic {
+  width: 110px;
+  height: 110px;
+}
+.user_Info {
+  width: 700px;
+}
 footer {
   position: absolute;
   bottom: 0;
