@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人中心-车辆管理-添加车辆</title>
+    <!-- web 是网站的整体样式 -->
+    <link rel="stylesheet" href="../css/web.css">
+    <!-- iconfont 是一个阿里巴巴的字体图标 -->
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <script src="https://cdn.bootcss.com/jquery/1.10.0/jquery.js"></script>
+</head>
+
+<body>
+    <header style="height: 110px;background:rgba(0,153,255,1)"></header>
+    <div class="cont_Wrap">
+        <div class="ju_Between inner">
+            <div class="siderBar_left mt30">
+                <ul>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe907;</i>
+                        <span>个人资料</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe607;</i>
+                        <span>账号管理</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe697;</i>
+                        <span>运单统计</span>
+                    </li>
+                    <li class="siderBar_Item cur">
+                        <i class="iconfont">&#xe695;</i>
+                        <span>车辆管理</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe615;</i>
+                        <span>司机管理</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe610;</i>
+                        <span>合同管理</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe606;</i>
+                        <span>保险管理</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe69d;</i>
+                        <span>评价管理</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe616;</i>
+                        <span>投诉建议</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe730;</i>
+                        <span>关于我们</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="content_right">
+                <div class="card">
+                    <h2 class="card_Title">添加车辆</h2>
+                    <form action="" class="form_group">
+                        <div class="form_Item">
+                            <label for="">车牌号：</label>
+                            <select name="">
+                                <option value="">京</option>
+                                <option value="">沪</option>
+                                <option value="">辽</option>
+                            </select>
+                            <select name="">
+                                <option value="">A</option>
+                                <option value="">B</option>
+                                <option value="">C</option>
+                            </select>
+                            <input type="text" placeholder="输入车牌号" style="width: 160px;">
+                        </div>
+                        <div class="form_Item">
+                            <label for="">我的车辆是：</label>
+                            <select name="">
+                                <option value="">牵引车</option>
+                                <option value="">牵引车A</option>
+                                <option value="">牵引车B</option>
+                            </select>
+                            <label for="" style="margin-left: 10px;">我的车长：</label>
+                            <select name="">
+                                <option value="">13米</option>
+                                <option value="">15米</option>
+                                <option value="">17米</option>
+                            </select>
+                        </div>
+                        <div class="form_Item">
+                            <label for="">最大载重：</label>
+                            <input type="text" placeholder="输入可用运载重量"
+                                style="width: 280px;border-bottom-right-radius: 0;border-top-right-radius: 0;">
+                            <div id="dun">吨</div>
+                        </div>
+                         <div class="form_Item">
+                             <label for="">满载车辆质量：</label>
+                             <input type="text" placeholder="输入可用运载重量"
+                                 style="width: 280px;border-bottom-right-radius: 0;border-top-right-radius: 0;">
+                             <div id="dun">吨</div>
+                         </div>
+                          <div class="form_Item">
+                              <label for="">交强险有效期：</label>
+                              <input type="text" placeholder="输入可用运载重量"
+                                  style="width: 280px;border-bottom-right-radius: 0;border-top-right-radius: 0;">
+                              <div id="dun">吨</div>
+                          </div>
+                        <div class="form_Item">
+                            <label for="">牌照类型：</label>
+                            <select style="width: 330px;" name="">
+                                <option value="">请选择</option>
+                                <option value="">牌照类型A</option>
+                                <option value="">牌照类型B</option>
+                            </select>
+                        </div>
+                        <div class="form_Item">
+                            <label for="">车牌颜色：</label>
+                            <select style="width: 330px;" name="">
+                                <option value="">请选择</option>
+                                <option value="">黑色</option>
+                                <option value="">白色</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="card">
+                    <h2 class="card_Title">添加车辆</h2>
+                    <form action="" class="form_group">
+                        <div class="form_Item">
+                            <label for="">道路运输证字号：</label>
+                            <input type="text" placeholder="输入目的地" style="width: 500px;">
+                        </div>
+                        <div class="form_Item">
+                            <label for="">联系人电话：</label>
+                            <input type="text" placeholder="联系人电话">
+                        </div>
+                         <div class="form_Item">
+                             <label for="">道路运输证照片：</label>
+                             <div class="user_Photo_group">
+                                 <div class="user_Photo_Item"></div>
+                                 <div class="user_Photo_Item"></div>
+                             </div>
+                         </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="btn_group inner">
+            <div class="btn_style"><span class="pv20">发布</span></div>
+            <div class="btn_style_white"><span class="pv20">取消</span></div>
+        </div>
+    </div>
+    <!-- <footer style="height: 240px;"></footer> -->
+</body>
+<script>
+    $('.siderBar_Item').on('click', function(){
+        $(this).addClass('cur').siblings().removeClass('cur');
+    })
+</script>
+</html>

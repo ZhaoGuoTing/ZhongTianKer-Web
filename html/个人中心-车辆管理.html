@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人中心-车辆管理-添加车辆</title>
+    <!-- web 是网站的整体样式 -->
+    <link rel="stylesheet" href="../css/web.css">
+    <!-- iconfont 是一个阿里巴巴的字体图标 -->
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <script src="https://cdn.bootcss.com/jquery/1.10.0/jquery.js"></script>
+</head>
+
+<body>
+    <header style="height: 110px;background:rgba(0,153,255,1)"></header>
+    <div class="cont_Wrap">
+        <div class="ju_Between inner">
+            <div class="siderBar_left mt30">
+                <ul>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe907;</i>
+                        <span>个人资料</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe607;</i>
+                        <span>账号管理</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe697;</i>
+                        <span>运单统计</span>
+                    </li>
+                    <li class="siderBar_Item cur">
+                        <i class="iconfont">&#xe695;</i>
+                        <span>车辆管理</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe615;</i>
+                        <span>司机管理</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe610;</i>
+                        <span>合同管理</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe606;</i>
+                        <span>保险管理</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe69d;</i>
+                        <span>评价管理</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe616;</i>
+                        <span>投诉建议</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe730;</i>
+                        <span>关于我们</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="content_right">
+                <div class="card">
+                    <h2 class="card_Title">添加车辆</h2>
+                    <div class="row" style="justify-content: space-between;align-items: baseline;">
+                        <form action="" class="form_group">
+                            <div class="row">
+                                <div class="form_Item">
+                                    <label for="">车牌号：</label>
+                                    <input type="text" placeholder="输入车牌号" style="width: 160px">
+                                </div>
+                                <div class="form_Item">
+                                    <label for="">车辆类型：</label>
+                                    <select class="" name="">
+                                        <option value="">请选择</option>
+                                        <option value="">车辆类型A</option>
+                                        <option value="">车辆类型B</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form_Item">
+                                    <label for="">载重：</label>
+                                    <input type="text" placeholder="请选择" style="width: 160px;">
+                                    <span style="padding: 18px 30px 0px 30px;">至</span>
+                                    <input type="text" placeholder="请选择" style="width: 160px;">
+                                </div>
+                            </div>
+                        </form>
+                        <a class="btn_style" href="#">搜索</a>
+                    </div>
+                    <h2 class="card_Title" style="border: none;">
+                        <div class="form_check">
+                            <input type="checkbox" name="" class="form_check_input">
+                            全部
+                        </div>
+                        <a class="btn_style" href="#">新增</a>
+                        <a class="btn_style" href="#">批量删除</a>
+                    </h2>
+                    <div style="position: relative;overflow: auto;">
+                        <table class="table_bordered">
+                            <thead>
+                                <tr>
+                                    <th nowrap="">
+                                        <input type="checkbox" name="" class="form_check_input">
+                                    </th>
+                                    <th nowrap="">
+                                        车牌号
+                                    </th>
+                                    <th nowrap="">
+                                        车型
+                                    </th>
+                                    <th nowrap="">
+                                        车长
+                                    </th>
+                                    <th nowrap="">
+                                        车宽
+                                    </th>
+                                    <th nowrap="">
+                                        指派人数
+                                    </th>
+                                    <th nowrap="">
+                                        状态
+                                    </th>
+                                    <th nowrap="">
+                                        添加时间
+                                    </th>
+                                    <th nowrap="">
+                                        操作
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td nowrap="">
+                                        <input type="checkbox" name="" class="form_check_input">
+                                    </td>
+                                    <td>
+                                        苏A1234
+                                    </td>
+                                    <td>
+                                        高栏车
+                                    </td>
+                                    <td>
+                                        11.00
+                                    </td>
+                                    <td>
+                                        2.55
+                                    </td>
+                                    <td>
+                                        1
+                                    </td>
+                                    <td>
+                                        审核通过
+                                    </td>
+                                    <td>
+                                        2019-06-06 16:00:00
+                                    </td>
+                                    <td>
+                                        详情 编辑 删除
+                                    </td>
+                                </tr>
+                                <tr nowrap="">
+                                    <td colspan="999" style="text-align: center;color: #909090;">暂无数据</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn_group inner">
+            <div class="btn_style"><span class="pv20">发布</span></div>
+            <div class="btn_style_white"><span class="pv20">取消</span></div>
+        </div>
+    </div>
+    <!-- <footer style="height: 240px;"></footer> -->
+</body>
+<script>
+    $('.siderBar_Item').on('click', function(){
+        $(this).addClass('cur').siblings().removeClass('cur');
+    })
+</script>
+</html>
