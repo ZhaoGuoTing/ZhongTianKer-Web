@@ -85,9 +85,21 @@ li {
 .pv20 {
   padding: 0 20px;
 }
+.pv10 {
+  padding: 0 10px;
+}
 .mt30 {
   margin-top: 30px;
 }
+.mr10 {
+  margin-right: 10px;
+}
+.ml10 {
+  margin-left: 10px;
+}
+.mh100 {
+  margin: 100px 0;
+} 
 /* 
   flex布局 
 */
@@ -115,7 +127,10 @@ li {
   display: flex;
   align-items: center;
 }
-
+.Flex_Wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
 .Flex_Dir {
   flex-direction: column;
   align-items: center;
@@ -214,10 +229,14 @@ h1.Process_Title {
   display: flex;
   align-items: center;
 }
+.form_group {
+  display: flex;
+  flex-direction: column;
+}
 .form_Item {
   display: flex;
   align-items: flex-start;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 .form_Item label {
   display: inline-block;
@@ -234,7 +253,7 @@ h1.Process_Title {
 .form_Item_box,
 .form_Item select,
 .form_Item input {
-  padding: 0 10px;
+  padding-left: 10px;
   height: 50px;
   border-radius: 6px;
   border: 1px solid #bbb;
@@ -246,7 +265,7 @@ h1.Process_Title {
 }
 .form_Item input[type=date] {
   width: 210px;
-  padding: 0;
+  padding-left: 10px;
 }
 .form_Item select {
   width: 160px;
@@ -589,6 +608,9 @@ h2.card_Title {
   border: 1px solid #DBDBDB;
   padding: 14px 20px;
 }
+.table_bordered td span {
+  cursor: pointer;
+}
 .form_check {
   display: flex;
   align-items: center;
@@ -601,7 +623,77 @@ h2.card_Title {
   border: 1px solid #0099ff;
   cursor: pointer;
 }
-
+.page {
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #515151;
+}
+.page li {
+  line-height: 40px;
+  text-align: center;
+  min-width: 40px;
+  height: 40px;
+  margin: 0 4px;
+  border-radius: 4px;
+  border: 1px solid #999;
+  cursor: pointer;
+}
+.page li.cur {
+  color: white;
+  background: #0099ff;
+  border: 1px solid #0099ff;
+}
+.page input.skip {
+  text-align: center;
+  height: 34px;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  width: 60px;
+}
+.page input.skip:focus {
+  outline: none;
+  /* 清除点击时默认的蓝色焦点框 */
+  border-style: solid;
+  border-color: rgba(0, 153, 255, 1);
+  box-shadow: 0 0 4px #0099ff;
+}
+.cargoInfo_Item {
+  width: 50%;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-around;
+}
+.cargoInfo_Item i.iconfont {
+  font-size: 90px;
+  color: #0099ff;
+}
+.cargoInfo_Item dl dt {
+  font-size: 16px;
+  color: #2c2c2c;
+  font-weight: 600;
+  line-height: 3;
+  width: 112px;
+  text-align: right;
+}
+.cargoInfo_Item dl dd {
+  font-size: 16px;
+  color: #707070;
+  font-weight: 600;
+  line-height: 3;
+}
+.cargoInfo_Item dl dd span {
+  padding: 0 6px;
+}
+.cargoInfo_Cont {
+  width: 400px;
+}
+.cargoInfo_Cont input {
+  border: 1px solid #fff;
+  color: #707070;
+  padding: 2px 6px;
+}
 footer {
   position: absolute;
   bottom: 0;

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>发布车源 - 发布历史</title>
+    <!-- web 是网站的整体样式 -->
+    <link rel="stylesheet" href="../css/web.css">
+    <!-- iconfont 是一个阿里巴巴的字体图标 -->
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <script src="https://cdn.bootcss.com/jquery/1.10.0/jquery.js"></script>
+</head>
+
+<body>
+    <header style="height: 110px;background:rgba(0,153,255,1)"></header>
+    <div class="cont_Wrap">
+        <div class="inner">
+            <ul class="tab_Title ju_Start mt30">
+                <li>发布车源</li>
+                <li class="cur">发布历史</li>
+                <div class="tab_line"></div>
+            </ul>
+        </div>
+        <div class="card inner">
+            <div class="card_Title ju_Between al_Center">
+                <div class="ju_Start al_Center">
+                    <div>山西省晋中市</div>
+                    <i class="iconfont al_Center" style="color: #F29021;padding: 0 30px 0 50px;">&#xe612;</i>
+                    <div>江苏省徐州市</div>
+                </div>
+                <div class="pv20">
+                    接单日期：2019-06-06 12:20:00
+                </div>
+            </div>
+            <div class="row" style="justify-content: space-between;align-items: flex-end;">
+                <div class="Invoice">
+                    <div class="Invoice_Item"><span style="color: #F29021;">【牵引车】</span>车长:13米</div>
+                    <div class="Invoice_Item"><span>载重：</span>10吨</div>
+                    <div class="Invoice_Item"><span>车牌号：</span>苏A12345</div>
+                    <div class="Invoice_Item"><span>联系人：</span>王刚蛋</div>
+                    <div class="Invoice_Item"><span>联系方式：</span><span style="color: #F29021;">13812345678</span></div>
+                </div>
+                <a class="btn_style_orange" href="#">已完成</a>
+            </div>
+        </div>
+        <div class="card inner">
+            <div class="card_Title ju_Between al_Center">
+                <div class="ju_Start al_Center">
+                    <div>山西省晋中市</div>
+                    <i class="iconfont al_Center" style="color: #F29021;padding: 0 30px 0 50px;">&#xe612;</i>
+                    <div>江苏省徐州市</div>
+                </div>
+                <div class="pv20">
+                    接单日期：2019-06-06 12:20:00
+                </div>
+            </div>
+            <div class="row" style="justify-content: space-between;align-items: flex-end;">
+                <div class="Invoice">
+                    <div class="Invoice_Item"><span style="color: #F29021;">【牵引车】</span>车长:13米</div>
+                    <div class="Invoice_Item"><span>载重：</span>10吨</div>
+                    <div class="Invoice_Item"><span>车牌号：</span>苏A12345</div>
+                    <div class="Invoice_Item"><span>联系人：</span>王刚蛋</div>
+                    <div class="Invoice_Item"><span>联系方式：</span><span style="color: #F29021;">13812345678</span>
+                    </div>
+                </div>
+                <a class="btn_style_orange" href="#">已取消</a>
+            </div>
+        </div>
+        <div class="card inner">
+            <div class="card_Title ju_Between al_Center">
+                <div class="ju_Start al_Center">
+                    <div>山西省晋中市</div>
+                    <i class="iconfont al_Center" style="color: #F29021;padding: 0 30px 0 50px;">&#xe612;</i>
+                    <div>江苏省徐州市</div>
+                </div>
+                <div class="pv20">
+                    接单日期：2019-06-06 12:20:00
+                </div>
+            </div>
+            <div class="row" style="justify-content: space-between;align-items: flex-end;">
+                <div class="Invoice">
+                    <div class="Invoice_Item"><span style="color: #F29021;">【牵引车】</span>车长:13米</div>
+                    <div class="Invoice_Item"><span>载重：</span>10吨</div>
+                    <div class="Invoice_Item"><span>车牌号：</span>苏A12345</div>
+                    <div class="Invoice_Item"><span>联系人：</span>王刚蛋</div>
+                    <div class="Invoice_Item"><span>联系方式：</span><span style="color: #F29021;">13812345678</span>
+                    </div>
+                </div>
+                <a class="btn_style_orange" href="#">已过期</a>
+            </div>
+        </div>
+    </div>
+    <!-- <footer style="height: 240px;"></footer> -->
+</body>
+<script type="text/javascript">
+    var $navLi = $('.tab_Title li');
+    var $navLiCur = $('.tab_Title li.cur');
+    var $navUl = $('.tab_Title');
+    var $navLine = $('.tab_Title .tab_line');
+    // 初始化位置
+    $navLine.animate({
+        width: $navLiCur.outerWidth(),
+        left: $navLiCur.position().left,
+    })
+    // 鼠标移入位置
+    $navLi.on('mouseenter', function () {
+        PoLeft = $(this).position().left; //  "li"距父元素"ul"的偏移位置
+        WidthLine = $(this).outerWidth(); //  width + padding + border
+
+        $navLine.stop().animate({
+            width: WidthLine,
+            left: PoLeft + 0
+        });
+    })
+    // 鼠标移出位置
+    $navUl.on('mouseleave', function () {
+        $navLine.stop().animate({
+            width: $navLiCur.outerWidth(),
+            left: $navLiCur.position().left,
+        });
+    })
+</script>
+
+</html>

@@ -14,6 +14,13 @@
 <body>
   <header style="height: 110px;background:rgba(0,153,255,1)"></header>
   <div class="cont_Wrap">
+    <div class="inner">
+      <ul class="tab_Title ju_Start mt30">
+        <li class="cur">发布车源</li>
+        <li>发布历史</li>
+        <div class="tab_line"></div>
+      </ul>
+    </div>
     <div class="card inner">
       <h2 class="card_Title">选择车辆</h2>
       <div class="row" style="justify-content: space-between;">
@@ -97,5 +104,33 @@
          $('.form_menu').slideUp(200);
       });
     })
+</script>
+<script type="text/javascript">
+  var $navLi = $('.tab_Title li');
+  var $navLiCur = $('.tab_Title li.cur');
+  var $navUl = $('.tab_Title');
+  var $navLine = $('.tab_Title .tab_line');
+  // 初始化位置
+  $navLine.animate({
+    width: $navLiCur.outerWidth(),
+    left: $navLiCur.position().left,
+  })
+  // 鼠标移入位置
+  $navLi.on('mouseenter', function () {
+    PoLeft = $(this).position().left; //  "li"距父元素"ul"的偏移位置
+    WidthLine = $(this).outerWidth(); //  width + padding + border
+
+    $navLine.stop().animate({
+      width: WidthLine,
+      left: PoLeft + 0
+    });
+  })
+  // 鼠标移出位置
+  $navUl.on('mouseleave', function () {
+    $navLine.stop().animate({
+      width: $navLiCur.outerWidth(),
+      left: $navLiCur.position().left,
+    });
+  })
 </script>
 </html>
