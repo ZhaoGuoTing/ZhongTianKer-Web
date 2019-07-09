@@ -100,6 +100,15 @@ li {
 .mh100 {
   margin: 100px 0;
 } 
+.font_orange {
+  color: #F29021;
+}
+.font_blue {
+  color: #0099ff;
+}
+.p30 {
+  padding: 30px;
+}
 /* 
   flex布局 
 */
@@ -349,6 +358,9 @@ h1.Process_Title {
   border-bottom: 1px dashed #C6C6C6;
 }
 h2.card_Title {
+  display: flex;
+  justify-content: space-between;
+  color: #2c2c2c;
   font-size: 24px;
   font-weight: 600;
 }
@@ -462,9 +474,21 @@ h2.card_Title {
   line-height: 50px;
   padding: 0 20px;
 }
-.Invoice_Item span {
+.waybill_Item {
+  width: 450px;
+  /* height: 50px; */
+  line-height: 50px;
+  padding: 0 20px;
+}
+.Invoice_Item span,
+.waybill_Item dt {
   color: #2c2c2c;
   font-weight: 600;
+  display: inline-block;
+}
+.waybill_Item dd {
+  display: inline-block;
+  color: #0099ff;
 }
 .tab_Title {
   color: #2c2c2c;
@@ -473,7 +497,7 @@ h2.card_Title {
   position: relative;
 }
 .tab_Title li {
-  width: calc(100% / 6);
+  width: calc(100% / 7);
   text-align: center;
   padding: 30px 0;
   cursor: pointer;
@@ -597,7 +621,13 @@ h2.card_Title {
   margin-right: 60px;
   background:rgba(255, 255, 255, 1);
   border:1px solid rgba(153, 153, 153, 1);
-  border-radius: 4px;
+  border-radius: 8px;
+}
+.user_Photo_Item img {
+  width: 220px;
+  height: 140px;
+  border-radius: 8px;
+  position: absolute; 
 }
 .table_bordered {
   text-align: center;
@@ -694,6 +724,54 @@ h2.card_Title {
   color: #707070;
   padding: 2px 6px;
 }
+.bankCard {
+  width:400px;
+  height:230px;
+  background:rgba(255, 255, 255, 1);
+  border-radius: 6px;
+  box-sizing: border-box;
+  margin: 15px;
+}
+.bankCard img {
+    width:400px;
+    height:230px;
+    border-radius: 6px;
+}
+.bankCard_Info {
+  margin-top: 10px;
+  color: #515151;
+}
+.bankCard_Info p {
+  line-height: 1.8;
+}
+.card_Del {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 0;
+  border-top: 1px solid #eeee;
+}
+.card_Del .card_DelBtn {
+  width:108px;
+  height:44px;
+  line-height: 44px;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  background:rgba(0, 153, 255, 1);
+  border-radius:6px;
+}
+.bankName {
+  color: #2c2c2c;
+  font-size: 20px;
+}
+.card_Kind {
+  background: #a2bfe1;
+  padding: 6px 14px;
+  border-radius: 4px;
+  color: white;
+  border: 1px solid #98b0d6;
+}
+
 footer {
   position: absolute;
   bottom: 0;
