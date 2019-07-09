@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录 注册</title>
+    <!-- web 是网站的整体样式 -->
+    <link rel="stylesheet" href="../css/web.css">
+    <!-- iconfont 是一个阿里巴巴的字体图标 -->
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <script src="https://cdn.bootcss.com/jquery/1.10.0/jquery.js"></script>
+</head>
+
+<body>
+    <header style="height: 110px;background:rgba(0,153,255,1)"></header>
+    <img src="https://www.dummyimage.com/1920x800/000/fff" alt="">
+    <!-- 登录 注册 弹窗 start-->
+    <div class="login_Modal">
+        <div class="login_Tab ju_Around">
+            <span class="cur">登录</span>
+            <span>注册</span>
+        </div>
+        <ul class="login_From">
+            <li class="login_From_Item">
+                <i class="iconfont">&#xe627;</i>
+                <input type="text" placeholder="请输入手机号码">
+            </li>
+            <li class="login_From_Item">
+                <i class="iconfont">&#xe674;</i>
+                <input type="text" placeholder="输入验证码">
+                <a href="javascript:void(0);" class="font_blue">验证码</a>
+            </li>
+            <li class="login_From_Item">
+                <i class="iconfont">&#xe65c;</i>
+                <input type="password" placeholder="请输入密码">
+            </li>
+            <li class="login_From_Item">
+                <i class="iconfont">&#xe65c;</i>
+                <input type="password" placeholder="确认密码">
+            </li>
+            <div class="login_Protocol">
+                <div class="checkbox">
+                    <i class="iconfont">&#xe6f2;</i>
+                </div>
+                <input type="checkbox" name="idol"> 我同意
+                <a href="javascript:void(0);" class="font_blue">《用户协议》《隐私政策》</a>
+            </div>
+            <div class="login_Btn">
+                登录
+            </div>
+        </ul>
+    </div>
+    <!-- 登录 注册 弹窗 end-->
+    <!-- <footer style="height: 240px;"></footer> -->
+</body>
+<script>
+    $('.login_Protocol').on('click', function () {
+        if ($(this).find('i').is(':visible')) {
+            $(this).find('i').hide();
+        } else {
+            $(this).find('i').show();
+        }
+    })
+</script>
+</html>
