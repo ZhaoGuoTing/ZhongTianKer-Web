@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>我的运单</title>
+    <title>个人中心-企业承运商</title>
     <!-- web 是网站的整体样式 -->
     <link rel="stylesheet" href="../css/web.css">
     <!-- iconfont 是一个阿里巴巴的字体图标 -->
@@ -81,8 +81,8 @@
                         <div class="user_Photo">
                             <h6>身份证照片：</h6>
                             <div class="user_Photo_group">
-                                <div class="user_Photo_Item"></div>
-                                <div class="user_Photo_Item"></div>
+                                <div class="user_Photo_Item"><img src="../img/身份证正面.png" alt=""></div>
+                                <div class="user_Photo_Item"><img src="../img/身份证背面.png" alt=""></div>
                             </div>
                         </div>
                     </div>
@@ -103,7 +103,9 @@
                         <div class="user_Photo">
                             <h6>营业执照：</h6>
                             <div class="user_Photo_group">
-                                <div class="user_Photo_Item"></div>
+                                <div class="user_Photo_Item">
+                                    <img src="../img/营业执照.png" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -114,6 +116,7 @@
     <!-- <footer style="height: 240px;"></footer> -->
 </body>
 <script>
+    // <!-- 左侧边栏列表 -->
     $('.siderBar_Item').on('click', function(){
         $(this).addClass('cur').siblings().removeClass('cur');
     })

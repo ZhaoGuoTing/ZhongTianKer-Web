@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>个人中心-车辆管理</title>
+    <title>个人中心 -司机管理</title>
     <!-- web 是网站的整体样式 -->
     <link rel="stylesheet" href="../css/web.css">
     <!-- iconfont 是一个阿里巴巴的字体图标 -->
@@ -31,11 +31,11 @@
                         <i class="iconfont">&#xe697;</i>
                         <span>运单统计</span>
                     </li>
-                    <li class="siderBar_Item cur">
+                    <li class="siderBar_Item">
                         <i class="iconfont">&#xe695;</i>
                         <span>车辆管理</span>
                     </li>
-                    <li class="siderBar_Item">
+                    <li class="siderBar_Item cur">
                         <i class="iconfont">&#xe615;</i>
                         <span>司机管理</span>
                     </li>
@@ -64,28 +64,11 @@
             <div class="content_right">
                 <div class="card">
                     <h2 class="card_Title">添加车辆</h2>
-                    <div class="row" style="justify-content: space-between;align-items: baseline;">
+                    <div class="row ph10" style="justify-content: flex-start;align-items: baseline;">
                         <form action="" class="form_group">
                             <div class="row">
                                 <div class="form_Item">
-                                    <label for="">车牌号：</label>
-                                    <input type="text" placeholder="输入车牌号" style="width: 160px">
-                                </div>
-                                <div class="form_Item">
-                                    <label for="">车辆类型：</label>
-                                    <select class="" name="">
-                                        <option value="">请选择</option>
-                                        <option value="">车辆类型A</option>
-                                        <option value="">车辆类型B</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form_Item">
-                                    <label for="">载重：</label>
-                                    <input type="text" placeholder="请选择" style="width: 160px;">
-                                    <span style="padding: 18px 30px 0px 30px;">至</span>
-                                    <input type="text" placeholder="请选择" style="width: 160px;">
+                                    <input type="text" placeholder="输入司机姓名或手机号">
                                 </div>
                             </div>
                         </form>
@@ -104,28 +87,22 @@
                             <thead>
                                 <tr style="background: #ECECEC;">
                                     <th nowrap="">
-                                        <input type="checkbox" name="" class="form_check_input">
+                                        序号
                                     </th>
                                     <th nowrap="">
-                                        车牌号
+                                        姓名
                                     </th>
                                     <th nowrap="">
-                                        车型
+                                        手机号
                                     </th>
                                     <th nowrap="">
-                                        车长
+                                        手机号
                                     </th>
                                     <th nowrap="">
-                                        车宽
-                                    </th>
-                                    <th nowrap="">
-                                        指派人数
+                                        创建时间
                                     </th>
                                     <th nowrap="">
                                         状态
-                                    </th>
-                                    <th nowrap="">
-                                        添加时间
                                     </th>
                                     <th nowrap="">
                                         操作
@@ -138,25 +115,19 @@
                                         <input type="checkbox" name="" class="form_check_input">
                                     </td>
                                     <td nowrap="" style="color: #0099FF;">
-                                        苏A1234
+                                        石再飞
                                     </td>
                                     <td nowrap="">
-                                        高栏车
+                                        苏CJG877
                                     </td>
                                     <td nowrap="">
-                                        11.00
+                                        苏CJG877
                                     </td>
                                     <td nowrap="">
-                                        2.55
-                                    </td>
-                                    <td nowrap="">
-                                        1
+                                        2019-06-13 19:00:52
                                     </td>
                                     <td nowrap="">
                                         审核通过
-                                    </td>
-                                    <td nowrap="">
-                                        2019-06-06 16:00:00
                                     </td>
                                     <td nowrap="" style="color: #0099FF;">
                                         <span>详情</span>

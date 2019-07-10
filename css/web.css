@@ -88,6 +88,9 @@ li {
 .pv10 {
   padding: 0 10px;
 }
+.ph10 {
+  padding: 10px 0;
+}
 .mt30 {
   margin-top: 30px;
 }
@@ -103,6 +106,9 @@ li {
 .mh100 {
   margin: 100px 0;
 } 
+.mh60 {
+  margin: 60px 0;
+}
 .font_orange {
   color: #F29021;
 }
@@ -148,7 +154,7 @@ li {
   align-items: center;
 }
 .inner {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 /* 
@@ -255,6 +261,8 @@ h1.Process_Title {
   width: 160px;
   text-align: right;
   padding-top: 18px;
+  color: #2c2c2c;
+  font-weight: 600;
 }
 .form_Item label::before {
   display: inline-block;
@@ -296,6 +304,13 @@ h1.Process_Title {
   border-top-right-radius: 6px;
   background: #0099ff;
   color: white;
+}
+.form_Item textarea[name=Suggestions] {
+  width: 760px;
+  border-radius: 6px;
+      border: 1px solid #bbb;
+      padding: 10px;
+      line-height: 1.6;
 }
 .form_Item_box {
   width: 1000px;
@@ -366,12 +381,12 @@ h2.card_Title {
   color: #2c2c2c;
   font-size: 24px;
   font-weight: 600;
+  padding-left: 20px;
 }
 .btn_group {
   display: flex;
   justify-content: center;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  padding: 60px 0;
 }
 .btn_style {
   font-size: 18px;
@@ -603,7 +618,7 @@ h2.card_Title {
 }
 .line {
   width:100%;
-  height:1px;
+  height:2px;
   background:#c6c6c6;
 }
 .user_Photo {
@@ -635,6 +650,7 @@ h2.card_Title {
 .table_bordered {
   text-align: center;
   width: 100%;
+  margin-bottom: 20px;
 }
 .table_bordered th,
 .table_bordered td {
@@ -779,7 +795,7 @@ h2.card_Title {
     top: 200px;
     left: calc(50% - 190px);
     width: 380px;
-    background:rgba(255, 255, 255, 0.4);
+    background:rgba(255, 255, 255, 0.6);
     border-radius:10px;
     z-index: 2;
     padding: 40px;
@@ -799,10 +815,10 @@ h2.card_Title {
   height: 44px;
   line-height: 44px;
   text-align: center;;
-  margin-bottom: 20px;
   border-radius: 4px;
   color: #fff;
   background: #0099ff;
+  cursor: pointer;
 }
 .login_From_Item i {
   font-size: 28px;
@@ -833,6 +849,12 @@ h2.card_Title {
   opacity: 0;
   position: absolute;
 }
+.login_Protocol .login_checkbox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;  
+}
 .login_Protocol .checkbox {
   width: 20px;
   height: 20px;
@@ -847,8 +869,40 @@ h2.card_Title {
   color: #0099ff;
   display: none;
 }
+.login_Tab {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;  
+  height: 24px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+.login_Tab span {
+  cursor: pointer;
+  transition:All 0.2s ease-in-out;
+  width: 100px;
+  text-align: center;
+}
 .login_Tab span.cur {
-  font-size: 30px;
+  transition:All 0.2s ease-in-out;
+  font-size: 24px;
+}
+.Forgot_Password {
+  color: #0099ff;
+  margin-bottom: 10px;
+  text-align: right;
+}
+.Verification_Code {
+  border: none;
+  margin-left: 10px;
+  background: linear-gradient(0deg, rgba(195, 195, 195, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  height: 50px;
+  color: #2c2c2c;
+  border:1px solid rgba(207, 207, 207, 1);
+  box-sizing: border-box;
+}
+.Verification_Code:focus {
+  outline: none;
 }
 footer {
   position: absolute;
@@ -894,3 +948,38 @@ input::-webkit-input-placeholder {
   font-size: 14px;
   /* placeholder位置  */
 }
+
+
+
+/* 星级评价 start */
+
+.star_content {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.star_score {
+  background: url(../img/stark2.png);
+  width: 160px;
+  height: 21px;
+  position: relative;
+}
+
+.star_score a {
+  height: 21px;
+  display: block;
+  text-indent: -999em;
+  position: absolute;
+  left: 0;
+}
+
+.star_score a:hover {
+  background: url(../img/stars2.png);
+  left: 0;
+}
+
+.star_score a.clibg {
+  background: url(../img/stars2.png);
+  left: 0;
+}
+/* 星级评价 end */

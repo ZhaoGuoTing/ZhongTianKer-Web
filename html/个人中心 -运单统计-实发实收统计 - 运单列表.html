@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>个人中心-车辆管理</title>
+    <title>个人中心 -运单统计-实发实收统计 - 运单列表</title>
     <!-- web 是网站的整体样式 -->
     <link rel="stylesheet" href="../css/web.css">
     <!-- iconfont 是一个阿里巴巴的字体图标 -->
@@ -63,41 +63,13 @@
             </div>
             <div class="content_right">
                 <div class="card">
-                    <h2 class="card_Title">添加车辆</h2>
-                    <div class="row" style="justify-content: space-between;align-items: baseline;">
-                        <form action="" class="form_group">
-                            <div class="row">
-                                <div class="form_Item">
-                                    <label for="">车牌号：</label>
-                                    <input type="text" placeholder="输入车牌号" style="width: 160px">
-                                </div>
-                                <div class="form_Item">
-                                    <label for="">车辆类型：</label>
-                                    <select class="" name="">
-                                        <option value="">请选择</option>
-                                        <option value="">车辆类型A</option>
-                                        <option value="">车辆类型B</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form_Item">
-                                    <label for="">载重：</label>
-                                    <input type="text" placeholder="请选择" style="width: 160px;">
-                                    <span style="padding: 18px 30px 0px 30px;">至</span>
-                                    <input type="text" placeholder="请选择" style="width: 160px;">
-                                </div>
-                            </div>
-                        </form>
-                        <a class="btn_style" href="#">搜索</a>
-                    </div>
                     <h2 class="card_Title" style="border: none;justify-content: flex-start;">
                         <div class="form_check">
                             <input type="checkbox" name="" class="form_check_input">
                             全部
                         </div>
-                        <a class="btn_style" href="#">新增</a>
-                        <a class="btn_style" href="#">批量删除</a>
+                        <a class="btn_style" href="#">导出</a>
+                        <a class="btn_style" href="#">返回</a>
                     </h2>
                     <div style="position: relative;overflow: auto;">
                         <table class="table_bordered">
@@ -107,28 +79,28 @@
                                         <input type="checkbox" name="" class="form_check_input">
                                     </th>
                                     <th nowrap="">
+                                        启运地
+                                    </th>
+                                    <th nowrap="">
+                                        目的地
+                                    </th>
+                                    <th nowrap="">
+                                        运单号
+                                    </th>
+                                    <th nowrap="">
+                                        司机
+                                    </th>
+                                    <th nowrap="">
+                                        联系方式
+                                    </th>
+                                    <th nowrap="">
                                         车牌号
                                     </th>
                                     <th nowrap="">
-                                        车型
+                                        货物明细
                                     </th>
                                     <th nowrap="">
-                                        车长
-                                    </th>
-                                    <th nowrap="">
-                                        车宽
-                                    </th>
-                                    <th nowrap="">
-                                        指派人数
-                                    </th>
-                                    <th nowrap="">
-                                        状态
-                                    </th>
-                                    <th nowrap="">
-                                        添加时间
-                                    </th>
-                                    <th nowrap="">
-                                        操作
+                                        运输费用
                                     </th>
                                 </tr>
                             </thead>
@@ -137,31 +109,29 @@
                                     <td nowrap="">
                                         <input type="checkbox" name="" class="form_check_input">
                                     </td>
-                                    <td nowrap="" style="color: #0099FF;">
-                                        苏A1234
+                                    <td nowrap="">
+                                        山西省晋中市
                                     </td>
                                     <td nowrap="">
-                                        高栏车
+                                        江苏省徐州市
                                     </td>
                                     <td nowrap="">
-                                        11.00
+                                        1321321321
                                     </td>
                                     <td nowrap="">
-                                        2.55
+                                        陈志龙
                                     </td>
                                     <td nowrap="">
-                                        1
+                                        13512345678
                                     </td>
                                     <td nowrap="">
-                                        审核通过
+                                        苏A123456
                                     </td>
                                     <td nowrap="">
-                                        2019-06-06 16:00:00
+                                        煤炭
                                     </td>
-                                    <td nowrap="" style="color: #0099FF;">
-                                        <span>详情</span>
-                                        <span>编辑</span>
-                                        <span>删除</span>
+                                    <td nowrap="">
+                                        7624.80元/【不含税】
                                     </td>
                                 </tr>
                                 <tr nowrap="">

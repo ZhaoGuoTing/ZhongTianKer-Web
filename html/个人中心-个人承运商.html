@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人中心-企业承运商</title>
+    <!-- web 是网站的整体样式 -->
+    <link rel="stylesheet" href="../css/web.css">
+    <!-- iconfont 是一个阿里巴巴的字体图标 -->
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <script src="https://cdn.bootcss.com/jquery/1.10.0/jquery.js"></script>
+</head>
+
+<body>
+    <header style="height: 110px;background:rgba(0,153,255,1)"></header>
+    <div class="cont_Wrap">
+        <div class="ju_Between inner">
+            <div class="siderBar_left mt30">
+                <ul>
+                    <li class="siderBar_Item cur">
+                        <i class="iconfont">&#xe907;</i>
+                        <span>个人资料</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe607;</i>
+                        <span>账号管理</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe697;</i>
+                        <span>运单统计</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe695;</i>
+                        <span>车辆管理</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe615;</i>
+                        <span>司机管理</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe610;</i>
+                        <span>合同管理</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe606;</i>
+                        <span>保险管理</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe69d;</i>
+                        <span>评价管理</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe616;</i>
+                        <span>投诉建议</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe730;</i>
+                        <span>关于我们</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="content_right card">
+                <div class="user_padding ju_Between">
+                    <div class="user_Pic">
+                        <span class="iconfont" style="font-size: 60px;color: #0099ff;">&#xe60b;</span>
+                    </div>
+                    <div class="user_Cont">
+                        <div class="user_Info">
+                            <div class="user_Intro">
+                                <div class="user_Intro_Item"><strong>姓名：<span>王花花</span></strong></div>
+                                <div class="user_Intro_Item"><strong>手机号：<input type="text" value="13812345678"></strong><em>修改</em></div>
+                                <div class="user_Intro_Item"><strong>身份证号：<span>138123198812121234</span></strong></div>
+                            </div>
+                            <div class="user_Vip">
+                                <span class="iconfont" style="font-size: 100px;color: #fed665;">&#xe605;</span>
+                                <em>已认证</em>
+                            </div>
+                        </div>
+                        <div class="user_Photo">
+                            <h6>身份证照片：</h6>
+                            <div class="user_Photo_group">
+                                <div class="user_Photo_Item"><img src="../img/身份证正面.png" alt=""></div>
+                                <div class="user_Photo_Item"><img src="../img/身份证背面.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="user_padding ju_Between">
+                    <div class="user_Pic">
+                        <span class="iconfont" style="font-size: 60px;color: #0099ff;">&#xe6c2;</span>
+                    </div>
+                    <div class="user_Cont">
+                        <div class="user_Info">
+                            <div class="user_Intro">
+                                <div class="user_Intro_Item"><strong>企业名称：<input type="text" value="XXX有限公司"></strong><em>修改</em></div>
+                                <div class="user_Intro_Item"><strong>企业法人：<input type="text" value="铁锤"></strong><em>修改</em></div>
+                                <div class="user_Intro_Item"><strong>经营地址：<input type="text" value="上海市浦东新区"></strong><em>修改</em></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <footer style="height: 240px;"></footer> -->
+</body>
+<script>
+    // <!-- 左侧边栏列表 -->
+    $('.siderBar_Item').on('click', function(){
+        $(this).addClass('cur').siblings().removeClass('cur');
+    })
+</script>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人中心 -运单统计-实收统计</title>
+    <!-- web 是网站的整体样式 -->
+    <link rel="stylesheet" href="../css/web.css">
+    <!-- iconfont 是一个阿里巴巴的字体图标 -->
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <script src="https://cdn.bootcss.com/jquery/1.10.0/jquery.js"></script>
+</head>
+
+<body>
+    <header style="height: 110px;background:rgba(0,153,255,1)"></header>
+    <div class="cont_Wrap">
+        <div class="ju_Between inner">
+            <div class="siderBar_left mt30">
+                <ul>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe907;</i>
+                        <span>个人资料</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe607;</i>
+                        <span>账号管理</span>
+                    </li>
+                    <li class="siderBar_Item cur">
+                        <i class="iconfont">&#xe697;</i>
+                        <span>运单统计</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe695;</i>
+                        <span>车辆管理</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe615;</i>
+                        <span>司机管理</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe610;</i>
+                        <span>合同管理</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe606;</i>
+                        <span>保险管理</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe69d;</i>
+                        <span>评价管理</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe616;</i>
+                        <span>投诉建议</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe730;</i>
+                        <span>关于我们</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="content_right card">
+                <div class="inner">
+                    <ul class="tab_Title ju_Start">
+                        <li class="cur">实发统计</li>
+                        <li>实收统计</li>
+                        <li>取消运单</li>
+                        <div class="tab_line" style="width: 171px; left: 171.417px;"></div>
+                    </ul>
+                </div>
+                <form action="" class="form_group ph10">
+                    <div class="form_Item ju_Between">
+                        <div>
+                            <input type="date" placeholder="请选择">
+                            <span style="padding: 18px 30px 0px 30px;">至</span>
+                            <input type="date" placeholder="请选择">
+                        </div>
+                        <a class="btn_style" href="#">搜索</a>
+                    </div>
+                </form>
+                <div style="position: relative;overflow: auto;">
+                    <table class="table_bordered">
+                        <thead>
+                            <tr style="background: #ECECEC;">
+                                <th nowrap="">
+                                    起运地/目的地
+                                </th>
+                                <th nowrap="">
+                                    运单笔数
+                                </th>
+                                <th nowrap="">
+                                    实付金额
+                                </th>
+                                <th nowrap="">
+                                    实发吨位
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td nowrap="">
+                                    李阳煤业-东源港
+                                </td>
+                                <td nowrap="">
+                                    运单：
+                                    <span class="font_blue">7笔</span>
+                                </td>
+                                <td nowrap="">
+                                    实付：53.373.20元
+                                </td>
+                                <td nowrap="">
+                                    实发：240.25吨
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">
+                                    李阳煤业-东源港
+                                </td>
+                                <td nowrap="">
+                                    运单：
+                                    <span class="font_blue">24笔</span>
+                                </td>
+                                <td nowrap="">
+                                    实付：53.373.20元
+                                </td>
+                                <td nowrap="">
+                                    实发：240.25吨
+                                </td>
+                            </tr>
+                            <tr nowrap="" style="background: #ECECEC;font-weight: 600;">
+                                <td nowrap="">
+                                    合计：
+                                </td>
+                               <td nowrap="">
+                                   运单：31笔
+                               </td>
+                               <td nowrap="">
+                                   实付：181.470.24元
+                               </td>
+                               <td nowrap="">
+                                   实发：1116.0吨
+                               </td>
+                            </tr>
+                            <tr nowrap="">
+                                <td colspan="999" style="text-align: center;color: #909090;">暂无数据</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="page">
+                    <div class="mr10">共计128条</div>
+                    <ul class="ju_Center">
+                        <li class="pv10">上一页</li>
+                        <li>1</li>
+                        <li class="cur">2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li style="cursor: not-allowed;">...</li>
+                        <li>99</li>
+                        <li>100</li>
+                        <li class="pv10">下一页</li>
+                    </ul>
+                    <div class="ml10">跳转至 <input class="skip" type="text"> 页</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <footer style="height: 240px;"></footer> -->
+</body>
+<script src="../js/common.js"></script>
+</html>

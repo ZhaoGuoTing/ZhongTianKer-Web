@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人中心 -评价管理-评价内容</title>
+    <!-- web 是网站的整体样式 -->
+    <link rel="stylesheet" href="../css/web.css">
+    <!-- iconfont 是一个阿里巴巴的字体图标 -->
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <script src="https://cdn.bootcss.com/jquery/1.10.0/jquery.js"></script>
+</head>
+
+<body>
+    <header style="height: 110px;background:rgba(0,153,255,1)"></header>
+    <div class="cont_Wrap">
+        <div class="ju_Between inner">
+            <div class="siderBar_left mt30">
+                <ul>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe907;</i>
+                        <span>个人资料</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe607;</i>
+                        <span>账号管理</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe697;</i>
+                        <span>运单统计</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe695;</i>
+                        <span>车辆管理</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe615;</i>
+                        <span>司机管理</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe610;</i>
+                        <span>合同管理</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe606;</i>
+                        <span>保险管理</span>
+                    </li>
+                    <li class="siderBar_Item cur">
+                        <i class="iconfont">&#xe69d;</i>
+                        <span>评价管理</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe616;</i>
+                        <span>投诉建议</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe730;</i>
+                        <span>关于我们</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="content_right">
+                <div class="card">
+                    <h2 class="card_Title" style="justify-content: center;">货单评价</h2>
+                    <div class="cargoInfo_Item">
+                        <div class="cargoInfo_Cont">
+                            <dl class="ju_Start">
+                                <dt>启运地目的地：</dt>
+                                <dd>山西省晋中市<i class="iconfont" style="font-size: 12px;color: #F29021;padding: 0 10px;">&#xe612;</i>江苏省徐州市</dd>
+                            </dl>
+                            <dl class="ju_Start">
+                                <dt>货单号：</dt>
+                                <dd>32132132131231231</dd>
+                            </dl>
+                            <dl class="ju_Start" style="align-items: center;">
+                                <dt>评分：</dt>
+                                <dd>
+                                    <div class="star_content">
+                                        <div id="startone">
+                                            <div class="star_score"></div>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <form action="" class="form_group">
+                        <div class="form_Item">
+                            <label for="">评价：</label>
+                            <textarea name="Suggestions" id="" cols="30" rows="10" placeholder="输入评价的内容"></textarea>
+                        </div>
+                    </form>
+                    <div class="btn_group inner">
+                        <div class="btn_style"><span class="pv20">保存</span></div>
+                        <div class="btn_style_white"><span class="pv20">取消</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <footer style="height: 240px;"></footer> -->
+</body>
+<script type="text/javascript" src="../js/startScore.js"></script>
+<script>
+    // <!-- 星级评价 -->
+    scoreFun($("#startone"))
+</script>
+<script>
+    $('.siderBar_Item').on('click', function(){
+        $(this).addClass('cur').siblings().removeClass('cur');
+    })
+</script>
+</html>
