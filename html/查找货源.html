@@ -106,7 +106,7 @@
                 </form>
                 <a class="btn_style" href="#">查询</a>
             </div>
-            <div class="sildeToggle_Btn"><span>收起</span><i class="iconfont" style="color: #707070;">&#xe600;</i></div>
+            <div class="sildeToggle_Btn"><span>展开</span><i class="iconfont" style="color: #707070;">&#xe601;</i></div>
         </div>
         <div class="card inner" style="margin-top: 90px;">
             <div class="card_Title ju_Between al_Center">
@@ -117,10 +117,10 @@
                     <div class="end"></div>
                     <div>江苏省徐州市</div>
                 </div>
-                <div class="ju_Start">
+                <a href="./查找货源-货源详情.html" class="card_Time">
                     发布日期：2019-06-24 12:00:00
-                    <a href="#" class="iconfont" style="color: #707070;padding: 0 30px 0 70px;">&#xe602;</a>
-                </div>
+                    <i class="iconfont" style="padding: 0 30px 0 70px;">&#xe602;</i>
+                </a>
             </div>
             <div class="row" style="justify-content: space-between;align-items: flex-end;">
                 <div class="Invoice">
@@ -131,7 +131,7 @@
                     <div class="Invoice_Item"><span>矿点：</span>XXX矿点</div>
                     <div class="Invoice_Item" style="color: #F29021;"><span>运价：</span>¥158.00元【不含税】</div>
                 </div>
-                <a class="btn_style" href="#">我要运货</a>
+                <a class="btn_style" href="./查找货源-指派车辆.html">我要运货</a>
             </div>
         </div>
     </div>
@@ -165,7 +165,8 @@
  </footer>
 </body>
 <script>
-    // <!-- 查询车辆 点击收起，展开 -->
+    // <!-- 查询车辆 点击收起，展开 --
+    $('.visible').hide();
     $('.sildeToggle_Btn').on('click', function(){
         if($('.visible').is(':visible')) {
             $(this).find('span').text('展开');
