@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人中心 -评价管理-已评价</title>
+    <!-- web 是网站的整体样式 -->
+    <link rel="stylesheet" href="../css/web.css">
+    <!-- iconfont 是一个阿里巴巴的字体图标 -->
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <script src="https://cdn.bootcss.com/jquery/1.10.0/jquery.js"></script>
+</head>
+
+<body>
+    <header style="height: 110px;background:rgba(0,153,255,1)"></header>
+    <div class="cont_Wrap">
+        <div class="ju_Between inner">
+            <div class="siderBar_left mt30">
+                <ul>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe907;</i>
+                        <span>个人资料</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe607;</i>
+                        <span>账号管理</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe697;</i>
+                        <span>运单统计</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe695;</i>
+                        <span>车辆管理</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe615;</i>
+                        <span>司机管理</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe610;</i>
+                        <span>合同管理</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe606;</i>
+                        <span>保险管理</span>
+                    </li>
+                    <li class="siderBar_Item cur">
+                        <i class="iconfont">&#xe69d;</i>
+                        <span>评价管理</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe616;</i>
+                        <span>投诉建议</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe730;</i>
+                        <span>关于我们</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="content_right card">
+                <div class="inner">
+                    <ul class="tab_Title ju_Start">
+                        <li>待评价</li>
+                        <li class="cur">已评价</li>
+                        <div class="tab_line" style="width: 171px; left: 171.417px;"></div>
+                    </ul>
+                </div>
+                <div class="card inner">
+                    <div class="card_Title ju_Between al_Center" style="background: #DBDBDB;">
+                        <div class="ju_Start al_Center">
+                            <div class="start"></div>
+                            <div>山西省晋中市</div>
+                            <i class="iconfont al_Center" style="color: #f04d46;padding: 0 30px 0 50px;"></i>
+                            <div class="end"></div>
+                            <div>江苏省徐州市</div>
+                        </div>
+                    </div>
+                    <div class="row" style="justify-content: space-between;align-items: flex-end;">
+                        <div class="Invoice mh20" style="align-items: center;">
+                            <div class="Invoice_Item"><span>用户：</span>138****1234</div>
+                            <div class="Invoice_Item omit">啥也不说，就是好</div>
+                            <div class="row">
+                                <ul class="show_number clearfix">
+                                    <li>
+                                        <div class="atar_Show">
+                                            <p tip="4.5"></p>
+                                        </div>
+                                        <span></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card inner">
+                    <div class="card_Title ju_Between al_Center" style="background: #DBDBDB;">
+                        <div class="ju_Start al_Center">
+                            <div class="start"></div>
+                            <div>山西省晋中市</div>
+                            <i class="iconfont al_Center" style="color: #f04d46;padding: 0 30px 0 50px;"></i>
+                            <div class="end"></div>
+                            <div>江苏省徐州市</div>
+                        </div>
+                    </div>
+                    <div class="row" style="justify-content: space-between;align-items: flex-end;">
+                        <div class="Invoice mh20" style="align-items: center;">
+                            <div class="Invoice_Item"><span>用户：</span>138****1234</div>
+                            <div class="Invoice_Item omit">啥也不说，就是好</div>
+                            <div class="row">
+                                <ul class="show_number clearfix">
+                                    <li>
+                                        <div class="atar_Show">
+                                            <p tip="4.5"></p>
+                                        </div>
+                                        <span></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page">
+                    <div class="mr10">共计128条</div>
+                    <ul class="ju_Center">
+                        <li class="pv10">上一页</li>
+                        <li>1</li>
+                        <li class="cur">2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li style="cursor: not-allowed;">...</li>
+                        <li>99</li>
+                        <li>100</li>
+                        <li class="pv10">下一页</li>
+                    </ul>
+                    <div class="ml10">跳转至 <input class="skip" type="text"> 页</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <footer style="height: 240px;"></footer> -->
+</body>
+<script src="../js/common.js"></script>
+<script type="text/javascript" src="../js/startScore.js"></script>
+
+<script>
+    $('.siderBar_Item').on('click', function(){
+        $(this).addClass('cur').siblings().removeClass('cur');
+    })
+</script>
+<script>
+    //显示分数
+    $(".show_number li p").each(function (index, element) {
+        var num = $(this).attr("tip");
+        var www = num * 2 * 16; //
+        $(this).css("width", www);
+        $(this).parent(".atar_Show").siblings("span").text(num + "分");
+    });
+</script>
+</html>

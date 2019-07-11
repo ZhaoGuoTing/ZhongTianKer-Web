@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人中心 -评价管理-已评价</title>
+    <!-- web 是网站的整体样式 -->
+    <link rel="stylesheet" href="../css/web.css">
+    <!-- iconfont 是一个阿里巴巴的字体图标 -->
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <script src="https://cdn.bootcss.com/jquery/1.10.0/jquery.js"></script>
+</head>
+
+<body>
+    <header style="height: 110px;background:rgba(0,153,255,1)"></header>
+    <div class="cont_Wrap">
+        <div class="ju_Between inner">
+            <div class="siderBar_left mt30">
+                <ul>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe907;</i>
+                        <span>个人资料</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe607;</i>
+                        <span>账号管理</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe697;</i>
+                        <span>运单统计</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe695;</i>
+                        <span>车辆管理</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe615;</i>
+                        <span>司机管理</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe610;</i>
+                        <span>合同管理</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe606;</i>
+                        <span>保险管理</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe69d;</i>
+                        <span>评价管理</span>
+                    </li>
+                    <li class="siderBar_Item">
+                        <i class="iconfont">&#xe616;</i>
+                        <span>投诉建议</span>
+                    </li>
+                    <li class="siderBar_Item cur">
+                        <i class="iconfont">&#xe730;</i>
+                        <span>关于我们</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="content_right">
+                <div class="card min_height1000">
+                    <h2 class="card_Title" style="justify-content: center;">投诉建议</h2>
+                    <div class="card_text">
+                        <h4>徐州中天科尔物流有限公司</h4>
+                        <br>
+                        <p>徐州中天科尔物流有限公司成立于2014年11月，公司地址:沛县龙湖大道1号。法人代表:魏彬，注册资本5000万元，主营业务为大宗商品道路(
+                        水路)货物运输。公司现有员工293人，其中物流电商平台73人(专业研发及维护人员13人，管理人员60人)，公司各项管理制度健全，经营运行信用良好。</p>
+                        <br>
+
+                        <p>中天科尔物流平台以强大的信息系统为支撑，以专业化的服务为保障，为客户提供货与车船智能匹配、车船在线监控、车船管理、在线支付、开票结算等服务，通过实名认证、信用评价等逐步构建平台诚信体系，确保每一单都是真货、真人、真车、真交易，满足无车全程业务一次托运、一单到底、一次保险、-票结算、一体化全程运输组织的全程供应链业务的需要，做到货运信息流、物流、资金流、票据流的“四流合一，让原本小、散、乱、差的货运行业越来越规范，由平台承担运输风险，提供安全服务保障，为货主降低运输风险。搭建智慧物流大数据分析，为客户提供更加精准的物流解决方案。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <footer style="height: 240px;"></footer> -->
+</body>
+<script src="../js/common.js"></script>
+
+<script>
+    $('.siderBar_Item').on('click', function(){
+        $(this).addClass('cur').siblings().removeClass('cur');
+    })
+</script>
+</html>
