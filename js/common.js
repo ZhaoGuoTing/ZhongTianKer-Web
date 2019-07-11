@@ -1,4 +1,4 @@
-// < !--公共导航栏、鼠标划入的效果-- >
+// < !--公共导航栏、鼠标划入的效果 橙色方块在移动-- >
 // 初始化位置
 $('#header_Wrap .nav_line').animate({
     width: $('#header_Wrap nav a.cur').outerWidth(),
