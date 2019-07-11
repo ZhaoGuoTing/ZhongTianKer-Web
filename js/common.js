@@ -1,29 +1,51 @@
 // < !--公共导航栏、鼠标划入的效果-- >
-var $navLi = $('.tab_Title li');
-var $navLiCur = $('.tab_Title li.cur');
-var $navUl = $('.tab_Title');
-var $navLine = $('.tab_Title .tab_line');
 // 初始化位置
-$navLine.animate({
-        width: $navLiCur.outerWidth(),
-        left: $navLiCur.position().left,
+$('#header_Wrap .nav_line').animate({
+    width: $('#header_Wrap nav a.cur').outerWidth(),
+    left: $('#header_Wrap nav a.cur').position().left,
 })
 // 鼠标移入位置
-$navLi.on('mouseenter', function () {
-        PoLeft = $(this).position().left; //  "li"距父元素"ul"的偏移位置
+$('#header_Wrap nav a').on('mouseenter', function () {
+    PoLeft = $(this).position().left; //  "li"距父元素"ul"的偏移位置
     WidthLine = $(this).outerWidth(); //  width + padding + border
 
-    $navLine.stop().animate({
+    $('#header_Wrap .nav_line').stop().animate({
         width: WidthLine,
-    left: PoLeft + 0
-});
+        left: PoLeft + 0
+    });
 })
 // 鼠标移出位置
-$navUl.on('mouseleave', function () {
-        $navLine.stop().animate({
-            width: $navLiCur.outerWidth(),
-            left: $navLiCur.position().left,
-        });
+$('#header_Wrap nav').on('mouseleave', function () {
+    $('#header_Wrap .nav_line').stop().animate({
+        width: $('#header_Wrap nav a.cur').outerWidth(),
+        left: $('#header_Wrap nav a.cur').position().left,
+    });
+})
+
+// ============================================
+// ============================================
+// < !-- card、选项卡鼠标划入的效果-- >
+// 初始化位置
+$('.tab_Title .tab_line').animate({
+    width: $('.tab_Title li.cur').outerWidth(),
+    left: $('.tab_Title li.cur').position().left,
+})
+// 鼠标移入位置
+$('.tab_Title li').on('mouseenter', function () {
+    PoLeft = $(this).position().left; //  "li"距父元素"ul"的偏移位置
+    WidthLine = $(this).outerWidth(); //  width + padding + border
+
+    $('.tab_Title .tab_line').stop().animate({
+        width: WidthLine,
+        left: PoLeft + 0
+    });
+})
+// 鼠标移出位置
+$('.tab_Title').on('mouseleave', function () {
+    $('.tab_Title .tab_line').stop().animate({
+        width: $('.tab_Title li.cur').outerWidth(),
+        left: $('.tab_Title li.cur').position().left,
+    });
 })
 
 

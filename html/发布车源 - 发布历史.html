@@ -14,7 +14,32 @@
 </head>
 
 <body>
-    <header style="height: 110px;background:rgba(0,153,255,1)"></header>
+    <header id="header_Wrap">
+        <div class="header_top">
+            <div class="inner ju_Between" style="line-height: 30px;">
+                <div class="fl_Tel"><span class="iconfont" style="margin-right: 10px;">&#xe608;</span>客服热线：400-961-8886
+                </div>
+                <div class="fr_Login"><span class="iconfont">&#xe60a;</span>
+                    <a href="#" style="padding: 0 16px;">登录</a>
+                    <a href="#">注册</a>
+                </div>
+            </div>
+        </div>
+        <div class="header_Bottom">
+            <div class="inner ju_Between">
+                <div class="logo"></div>
+                <nav>
+                    <a class="cur" href="./index.html">首页</a>
+                    <a href="./发布车源.html">发布车源</a>
+                    <a href="./查找货源.html">查找货源</a>
+                    <a href="./我的运单-状态列表.html">我的运单</a>
+                    <a href="./个人账户.html">个人账户</a>
+                    <a href="./个人中心 -关于我们.html">个人中心</a>
+                    <div class="nav_line"></div>
+                </nav>
+            </div>
+        </div>
+    </header>
     <div class="cont_Wrap">
         <div class="inner">
             <ul class="tab_Title ju_Start mt30">
@@ -94,33 +119,5 @@
     </div>
     <!-- <footer style="height: 240px;"></footer> -->
 </body>
-<script type="text/javascript">
-    var $navLi = $('.tab_Title li');
-    var $navLiCur = $('.tab_Title li.cur');
-    var $navUl = $('.tab_Title');
-    var $navLine = $('.tab_Title .tab_line');
-    // 初始化位置
-    $navLine.animate({
-        width: $navLiCur.outerWidth(),
-        left: $navLiCur.position().left,
-    })
-    // 鼠标移入位置
-    $navLi.on('mouseenter', function () {
-        PoLeft = $(this).position().left; //  "li"距父元素"ul"的偏移位置
-        WidthLine = $(this).outerWidth(); //  width + padding + border
-
-        $navLine.stop().animate({
-            width: WidthLine,
-            left: PoLeft + 0
-        });
-    })
-    // 鼠标移出位置
-    $navUl.on('mouseleave', function () {
-        $navLine.stop().animate({
-            width: $navLiCur.outerWidth(),
-            left: $navLiCur.position().left,
-        });
-    })
-</script>
-
+<script src="../js/common.js"></script>
 </html>
