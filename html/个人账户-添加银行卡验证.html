@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>个人账户 - 添加银行卡</title>
+    <title>个人账户-添加银行卡验证</title>
     <!-- web 是网站的整体样式 -->
     <link rel="stylesheet" href="../css/web.css">
     <!-- iconfont 是一个阿里巴巴的字体图标 -->
@@ -49,44 +49,21 @@
                 <div class="tab_line"></div>
             </ul>
         </div>
-        <div class="card inner Flex_Wrap">
-            <div class="bankCard p30">
-                <div class="ju_Between al_Center">
-                    <div class="ju_Start al_Center">
-                        <i class="iconfont" style="font-size: 32px;color: #ff3333;">&#xe663;</i>
-                        <div class="bankName">中国银行</div>
-                    </div>
-                    <div class="card_Kind">借记卡</div>
+        <div class="card inner Flex_Wrap min_height600">
+            <form action="" class="form_group mh60">
+                <div class="form_Item">
+                    <label for="">手机号：</label>
+                    <input type="text" placeholder="输入手机号">
+                    <button type="button" name="CodeBtn_E" class="Verification_Code">点击获取验证码</button>
                 </div>
-                <div class="bankCard_Info">
-                    <p>开通时间：2019-03-27 19:46:46</p>
-                    <p>尾号：2238</p>
-                    <p>当前状态：已添加</p>
+                <div class="form_Item">
+                    <label for="">验证码：</label>
+                    <input type="text" placeholder="输入验证码">
                 </div>
-                <div class="card_Del">
-                    <div class="card_DelBtn">删除</div>
-                </div>
+            </form>
+            <div class="btn_group inner">
+                <a href="./个人账户-添加银行卡-添加.html" class="btn_style"><span class="pv20">下一步</span></a>
             </div>
-            <div class="bankCard p30">
-                <div class="ju_Between al_Center">
-                    <div class="ju_Start al_Center">
-                        <i class="iconfont" style="font-size: 32px;color: #ff3333;">&#xe663;</i>
-                        <div class="bankName">中国银行</div>
-                    </div>
-                    <div class="card_Kind">借记卡</div>
-                </div>
-                <div class="bankCard_Info">
-                    <p>开通时间：2019-03-27 19:46:46</p>
-                    <p>尾号：2238</p>
-                    <p>当前状态：已添加</p>
-                </div>
-                <div class="card_Del">
-                    <div class="card_DelBtn">删除</div>
-                </div>
-            </div>
-            <a href="./个人账户-添加银行卡验证.html" class="bankCard">
-                <img src="../img/添加银行卡.png" alt="">
-            </a>
         </div>
     </div>
     <footer>

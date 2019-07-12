@@ -64,6 +64,7 @@ m_ToolBar_QrCode_Wrap($("button[name='CodeBtn_A']"))
 m_ToolBar_QrCode_Wrap($("button[name='CodeBtn_B']"))
 m_ToolBar_QrCode_Wrap($("button[name='CodeBtn_C']"))
 m_ToolBar_QrCode_Wrap($("button[name='CodeBtn_D']"))
+m_ToolBar_QrCode_Wrap($("button[name='CodeBtn_E']"))
 
 
 function m_ToolBar_QrCode_Wrap(CodeBtn) {
