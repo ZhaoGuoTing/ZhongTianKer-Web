@@ -648,6 +648,8 @@ h2.card_Title {
   align-items: center;
 }
 .user_Intro_Item input {
+  font-size: 16px;
+  color: #707070;
   border: 1px solid white;
 }
 .user_Intro_Item input:focus {
@@ -725,6 +727,9 @@ h2.card_Title {
   height: 22px;
   border: 1px solid #0099ff;
   cursor: pointer;
+}
+.form_check_input:focus {
+  box-shadow: none;
 }
 .page {
   margin: 160px 0 60px;
